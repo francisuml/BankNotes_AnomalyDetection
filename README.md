@@ -24,4 +24,4 @@ NOTE This dataset has no missing value
 
 Francis Carl Sumile 
 Machine Learning Practitioner | Data Scientist
-GitHub: github.com/francisu.ml
+GitHub: github.com/francisuml
