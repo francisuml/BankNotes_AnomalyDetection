@@ -19,6 +19,41 @@ Banknote Authentication - UCI Machine Learning Repository
 
 NOTE This dataset has no missing value
 
+## Methodology
+
+1. **Exploratory Data Analysis**
+   - Feature distributions and correlations
+   - Class imbalance analysis
+
+2. **Feature Engineering**
+   - Created interaction features:
+     - Variance/Entropy ratio
+     - Skewness-Kurtosis difference
+     - Variance-Skewness product
+   - Added distance-to-cluster features
+
+3. **Model Development**
+   - Isolation Forest with hyperparameter tuning
+   - Local Outlier Factor (LOF)
+   - One-Class SVM
+   - Hybrid K-means + Isolation Forest approach
+   - Ensemble of best performing models
+
+4. **Evaluation**
+   - Multiple metrics: Accuracy, Precision, Recall, F1, ROC AUC
+   - Confusion matrices
+   - Feature importance analysis
+
+## Results
+
+Our best performing model (ensemble approach) achieved:
+- **F1-score**: 0.92
+- **Accuracy**: 93.5%
+- **Precision**: 91.2%
+- **Recall**: 92.8%
+
+Visualizations available in the notebook show clear separation between genuine and forged notes in the engineered feature space.
+
 
 ### Author
 
